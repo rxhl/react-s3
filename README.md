@@ -2,7 +2,16 @@
 
 Deploy a react app to S3 for static hosting using GitHub actions.
 
-## AWS config
+## Setup
+
+Go to the settings tab and set the following two secrets that would be used by GitHub actions.
+
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+
+## Appendix
+
+### AWS config
 
 This is not a part of the CI/CD process but for general testing.
 
@@ -22,7 +31,8 @@ Default output format [None]: json
 $ aws s3 ls
 ```
 
-## Reference
+### Reference
 
 [1] https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+
 [2] https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
