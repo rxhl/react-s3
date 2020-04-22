@@ -1,6 +1,6 @@
 # react-s3
 
-![rxhl-cra](https://github.com/rxhl/react-s3/workflows/rxhl-cra/badge.svg)
+![rxhl-cra](https://github.com/rxhl/react-s3/workflows/react-s3/badge.svg)
 
 Deploy a react app to S3 for static hosting using GitHub actions.
 

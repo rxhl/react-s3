@@ -1,11 +1,11 @@
-name: rxhl-cra
+name: react-s3
 
 on:
   push:
     branches: [master]
 
 jobs:
-  deplopy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1 - Use checkout@v2
