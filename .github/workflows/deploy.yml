@@ -31,6 +31,7 @@ jobs:
 
       - name: Step 6 - Deploy to S3
         run: |
+          chmod 777 ./build -R
           ls
           aws s3 ls
           aws s3 rb s3://rxhl-test --force
