@@ -1,3 +1,28 @@
-## react-s3
+# react-s3
 
-Deploy a react app to S3 for static hosting.
+Deploy a react app to S3 for static hosting using GitHub actions.
+
+## AWS config
+
+This is not a part of the CI/CD process but for general testing.
+
+```
+# 1. Make sure you have an active AWS account
+
+# 2. Install the AWS CLI [1]
+
+# 3. Configure the AWS CLI [2]
+$ aws configure
+AWS Access Key ID [None]: YOUR_KEY_ID
+AWS Secret Access Key [None]: YOUR_ACCESS_KEY
+Default region name [None]: us-east-1
+Default output format [None]: json
+
+# 4. Verify that it's working
+$ aws s3 ls
+```
+
+## Reference
+
+[1] https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+[2] https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
