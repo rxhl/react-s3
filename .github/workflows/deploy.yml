@@ -31,5 +31,8 @@ jobs:
 
       - name: Step 6 - Deploy to S3
         run: |
-          pwd
+          ls
           aws s3 ls
+          aws s3 rb s3://rxhl-test --force
+          aws s3 mb s3://rxhl-test
+          aws s3 sync ./build s3://rxhl-test
