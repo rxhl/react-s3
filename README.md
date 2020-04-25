@@ -2,7 +2,7 @@
 
 ![rxhl-cra](https://github.com/rxhl/react-s3/workflows/react-s3/badge.svg)
 
-Deploy a react app to S3 for static hosting using GitHub actions.
+Deploy a react app to S3/CloudFront for static hosting using GitHub actions.
 
 ## Setup
 
@@ -33,11 +33,11 @@ Default output format [None]: json
 $ aws s3 ls
 ```
 
-### CloudFront (optional)
+### CloudFront
 
 Rather than hosting directly from S3, you can also put a CloudFront distribution in front of the bucket. The steps are as follows.
 
-1.  Go to CloudFront and create a new distribution
+1.  Go to [CloudFront](https://console.aws.amazon.com/cloudfront/home?region=us-east-1) and create a new distribution
 2.  Select the appropriate bucket
 3.  Launch the new distribution
 

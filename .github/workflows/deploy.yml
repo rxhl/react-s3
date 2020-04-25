@@ -35,5 +35,4 @@ jobs:
           aws s3 ls
           aws s3 rb s3://rxhl-test --force
           aws s3 mb s3://rxhl-test
-          aws s3 sync ./build s3://rxhl-test --acl public-read
-          aws s3 website s3://rxhl-test --index-document index.html
+          aws s3 sync ./build s3://rxhl-test
