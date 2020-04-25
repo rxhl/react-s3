@@ -33,6 +33,14 @@ Default output format [None]: json
 $ aws s3 ls
 ```
 
+### CloudFront (optional)
+
+Rather than hosting directly from S3, you can also put a CloudFront distribution in front of the bucket. The steps are as follows.
+
+1.  Go to CloudFront and create a new distribution
+2.  Select the appropriate bucket
+3.  Launch the new distribution
+
 ### Reference
 
 [1] https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
